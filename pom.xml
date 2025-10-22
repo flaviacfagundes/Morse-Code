@@ -79,7 +79,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.morsecode.morsecode/com.morsecode.morsecode.HelloApplication</mainClass>
+                            <mainClass>com.morsecode.morsecode/com.morsecode.morsecode.view.HelloApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
