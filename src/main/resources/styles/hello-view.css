@@ -1,0 +1,58 @@
+
+/* ---------- Reset básico ---------- */
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    -fx-background-color: linear-gradient(to bottom right, #1e1f29, #2a2d3e);
+    -fx-text-fill: #f0f0f0;
+}
+
+/* ---------- Container principal ---------- */
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 20;
+    -fx-padding: 40;
+}
+
+/* ---------- Label de boas-vindas ---------- */
+.label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #00c6ff, #0072ff);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.3, 0, 2);
+}
+
+/* ---------- Botão moderno ---------- */
+.button {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0072ff);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.2, 0, 3);
+    -fx-border-color: transparent;
+    -fx-border-radius: 8;
+    -fx-transition: 0.3s;
+}
+
+/* ---------- Efeito hover ---------- */
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #3a7bd5, #3a6073);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 15, 0.4, 0, 4);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+/* ---------- Efeito de clique ---------- */
+.button:pressed {
+    -fx-background-color: linear-gradient(to right, #005bea, #00c6fb);
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+}
+
+/* ---------- Transições suaves ---------- */
+.button, .label {
+    -fx-transition: all 0.2s ease-in-out;
+}
+
