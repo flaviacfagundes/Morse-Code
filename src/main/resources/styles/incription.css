@@ -1,0 +1,20 @@
+
+.incription-container {
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-alignment: top-center;
+}
+
+.io-box {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+.io-column {
+    -fx-alignment: center;
+    -fx-spacing: 8px;
+}
+
+.io-column .text-area {
+    -fx-min-height: 150px;
+}
