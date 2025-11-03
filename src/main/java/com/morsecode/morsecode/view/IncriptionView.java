@@ -9,7 +9,7 @@ public class IncriptionView extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(IncriptionView.class.getResource("/com/morsecode/morsecode/incription.fxml"));
-        primaryStage.setScene(new Scene(fxmlLoader.load(), 600, 400));
+        primaryStage.setScene(new Scene(fxmlLoader.load(), 1000, 450));
         primaryStage.setTitle("Conversor de Código Morse");
         primaryStage.show();
     }

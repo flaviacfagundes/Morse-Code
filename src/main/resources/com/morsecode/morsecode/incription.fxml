@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.morsecode.morsecode.controller.IncriptionController">
+<AnchorPane prefHeight="450.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.morsecode.morsecode.controller.IncriptionController">
     <VBox styleClass="incription-container" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
         <Text styleClass="h1" text="Conversor de Código Morse">
          <font>
@@ -21,8 +21,12 @@
                 <TextArea fx:id="outputTextArea" editable="false" promptText="O código Morse aparecerá aqui..." styleClass="text-area" wrapText="true" VBox.vgrow="ALWAYS" />
             </VBox>
         </HBox>
-        <Button onAction="#handleEncrypt" text="Criptografar (Texto -&gt; Morse)" />
-        <Button onAction="#handleClear" styleClass="button-outline" text="Limpar Campos" />
+        <HBox spacing="10.0" alignment="CENTER">
+            <Button onAction="#handleEncrypt" text="Criptografar (Texto -&gt; Morse)" HBox.hgrow="ALWAYS" />
+            <Button onAction="#handleDecrypt" text="Descriptografar (Morse -&gt; Texto)" HBox.hgrow="ALWAYS" />
+            <Button onAction="#handleShowTree" text="Visualizar Árvore Binária" />
+            <Button onAction="#handleClear" styleClass="button-outline" text="Limpar Campos" />
+        </HBox>
     </VBox>
     <stylesheets>
         <URL value="@../../../styles/style.css" />
