@@ -68,11 +68,7 @@ public class MorseTreeBuilder {
      */
     public static MorseTree buildDefaultTree() {
         MorseTree tree = new MorseTree();
-        
-        for (Map.Entry<Character, String> entry : MORSE_CODE_MAP.entrySet()) {
-            tree.insert(entry.getKey(), entry.getValue());
-        }
-        
+        for (Map.Entry<Character, String> entry : MORSE_CODE_MAP.entrySet()) { tree.insert(entry.getKey(), entry.getValue()); }
         return tree;
     }
     
@@ -87,9 +83,7 @@ public class MorseTreeBuilder {
         
         for (Character ch : characters) {
             String morseCode = MORSE_CODE_MAP.get(ch);
-            if (morseCode != null) {
-                tree.insert(ch, morseCode);
-            }
+            if (morseCode != null) { tree.insert(ch, morseCode); }
         }
         
         return tree;

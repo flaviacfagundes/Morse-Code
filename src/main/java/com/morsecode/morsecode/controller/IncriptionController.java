@@ -35,8 +35,7 @@ public class IncriptionController {
         String inputText = inputTextArea.getText();
         
         if (inputText == null || inputText.trim().isEmpty()) {
-            showAlert("Aviso", "Por favor, digite um texto para criptografar.");
-            return;
+            showAlert("Aviso", "Por favor, digite um texto para criptografar."); return;
         }
         
         String encoded = morseTree.encodeWord(inputText);
@@ -53,8 +52,7 @@ public class IncriptionController {
         String inputMorse = inputTextArea.getText();
         
         if (inputMorse == null || inputMorse.trim().isEmpty()) {
-            showAlert("Aviso", "Por favor, digite um código Morse para descriptografar.");
-            return;
+            showAlert("Aviso", "Por favor, digite um código Morse para descriptografar."); return;
         }
         
         String decoded = morseTree.decodeWord(inputMorse);
@@ -121,9 +119,7 @@ public class IncriptionController {
         
         for (char ch : text.toCharArray()) {
             // Inclui apenas caracteres que têm código morse (A-Z, 0-9, espaço)
-            if ((ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9') || ch == ' ') {
-                characters.add(ch);
-            }
+            if ((ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9') || ch == ' ') { characters.add(ch); }
         }
         
         return characters;

@@ -1,6 +1,5 @@
 package com.morsecode.morsecode;
 
-import com.morsecode.morsecode.view.HelloApplication;
 import com.morsecode.morsecode.view.IncriptionView;
 import javafx.application.Application;
 

@@ -5,20 +5,26 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="450.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.morsecode.morsecode.controller.IncriptionController">
-    <VBox styleClass="incription-container" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
-        <Text styleClass="h1" text="Conversor de Código Morse">
-         <font>
+<AnchorPane
+    prefHeight="450.0" prefWidth="1000.0"
+    xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.morsecode.morsecode.controller.IncriptionController">
+    <VBox
+        styleClass="incription-container"
+        AnchorPane.bottomAnchor="15.0"
+        AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0"
+        AnchorPane.topAnchor="15.0">
+        <Text styleClass="h1" text="Conversor de Código Morse"> <font>
             <Font size="26.0" />
-         </font></Text>
+        </font> </Text>
         <HBox styleClass="io-box">
             <VBox styleClass="io-column" HBox.hgrow="ALWAYS">
-                <Label styleClass="h2" text="Texto para Criptografar:" />
+                <Label styleClass="h2" text="INPUT do texto:" />
                 <TextArea fx:id="inputTextArea" promptText="Digite seu texto aqui..." styleClass="text-area" wrapText="true" VBox.vgrow="ALWAYS" />
             </VBox>
             <VBox styleClass="io-column" HBox.hgrow="ALWAYS">
-                <Label styleClass="h2" text="Resultado em Código Morse:" />
-                <TextArea fx:id="outputTextArea" editable="false" promptText="O código Morse aparecerá aqui..." styleClass="text-area" wrapText="true" VBox.vgrow="ALWAYS" />
+                <Label styleClass="h2" text="OUTPUT do texto:" />
+                <TextArea fx:id="outputTextArea" editable="false" promptText="O resultado aparece-ra aqui..." styleClass="text-area" wrapText="true" VBox.vgrow="ALWAYS" />
             </VBox>
         </HBox>
         <HBox spacing="10.0" alignment="CENTER">
